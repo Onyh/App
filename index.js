@@ -1,26 +1,14 @@
-// Hello World! Denovo não!!!!😭😭😭
-
-console.log("Olá, mundo!");
-
-// Pelo incrível que pareça deu problema nessa parte KKKKKKKKKK
-// O terminal não encontrava o Node, então não retornava a mensagem
-// Nada que um vídeo de um indiano não resolva kkkk
-
-// arrays, objetos
-
 let meta = {
     value: 'ler um livro por mês',
-    checked: false,
-    log: (info) => {
-        console.log(info)
-    }
+    checked: true,
 }
 
-meta.log(meta.value)
+let metas = [
+    meta,
+    {
+        value: "caminhar 20 minutos todos os dias",
+        checked: false
+    }
+]
 
-// functiom  // arrow function
-
-const criarMeta = () => {}
-
-function criarMeta() {}
-
+console.log(metas[1].value)
