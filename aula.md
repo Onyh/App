@@ -1,4 +1,4 @@
-## Linguagem de formatação
+# Linguagem de formatação
 
 Maneira de dar instruções ao computador 
 Como um quebra-cabeças, é utilizado peças para criar algoritimos, ou seja, para resolver problemas. 
@@ -32,20 +32,37 @@ Exemplo: ("Hello World!")
 - let
 - const
 
+## Operadores
+
+- [x] Operadores de atribuição de valor: =
+- [x] Operdadores de contatenação (É o junção do valor de duas ou mais Strings): +
+
 ## Dados
 
 **Tipos de dados:**
 
-- Strings (textos): "" '' ``
-- Number (número): 2 ou 1.6
-- Function (função)
+- [x] Strings (textos): "" '' ``
+- [x] Number (número): 2 ou 1.6
+- [x] Boolean: true, false
 
-## Objeto
+## Estrutura de dados:
+
+### Objetos:
+
+- [x] Atributos e métodos
+- [x] Criação e manipulação de objetos
+- [x] Acesso a propriedades de objetos
 
 **Tipos de objetos:**
 
 - console
 
-## Operadores
+### Functions
 
-- Operadores de atribuição de valor: =
+- [x] Criar
+- [x] Executar
+- [x] Arrow function / Named function
+
+### Arrays
+
+- [x] Uma lista que contem qualquer tipo de dado
