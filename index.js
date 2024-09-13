@@ -61,9 +61,36 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "Metas finalizadas",
+        message: "Metas finalizadas" = realizadas.length,
         choices: [...realizadas]
     })
+
+}
+
+const metasAbertas = async () => {
+    const abertas = metas.filter((meta) => {
+        return !meta.checked // ou != true 
+    })
+// o motivo da primeira função não ter parado no primeiro "return" acontece por serem de funções diferentes
+// o primeiro "return" é da função "const abertas = metas.filter((meta)"
+// e o segundo é da "const metasAbertas = async ()" 
+// ou seja, é como se o primeiro "return" estivesse oculto para a primeria função
+
+    if(abertas.length == 0) {
+        console.log("Não existem metas abertas! :) ")
+        return
+    }
+// "Ah, mas como a primeira função está enxergando o segundo return?"
+// Eu também não entendi essa parte, já que esse "return" está dentro de uma terceira função 
+// O professor não explicou direito :|
+
+    await select({
+        message: "Notas Abertas " = abertas.length,
+        choices: [...abertas]
+    })
+// Colocar(Concatenar =) o "abertas.length" faz com que mostre a quantidade total de "Metas Abertas"
+// Isso também acontece nas funções anteriores
+// É que comecei fazer essas anotações agora :P 
 
 }
 
@@ -87,6 +114,10 @@ const start = async () => {
                     value: "realizadas"
                 },
                 {
+                    name: "Metas abertas",
+                    value: "abertas"
+                },
+                {
                     name: "Sair",
                     value: "sair"
                 }
@@ -103,6 +134,9 @@ const start = async () => {
                 break
             case"realizadas":
                 await metasRealizadas()
+                break
+            case"abertas":
+                await metasAbertas()
                 break
             case "sair":
                 console.log("Até a próxima!")
