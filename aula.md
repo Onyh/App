@@ -13,7 +13,7 @@ Como um quebra-cabeças, é utilizado peças para criar algoritimos, ou seja, pa
 - [x] Tipos de dados (string, number, boolean)
 - [x] Estrutura de dados (functions, object, array)
 - Controle de fluxo (if/else)
-- Estrutura de repetição (for, while)
+- [x] Estrutura de repetição (for, while)
 
 
 # Fases da resolução de um problema
@@ -79,3 +79,7 @@ Exemplo: ("Hello World!")
 
 - [x] Importação de módulos {require, CommonJS}
 - [x] Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assíncrona e Promises:
+
+- [x] Uso de funções assincronas (async/await)
