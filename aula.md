@@ -66,3 +66,7 @@ Exemplo: ("Hello World!")
 ### Arrays
 
 - [x] Uma lista que contem qualquer tipo de dado
+
+# Estrutura de repetição
+
+- [x] while
