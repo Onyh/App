@@ -12,7 +12,7 @@ Como um quebra-cabeças, é utilizado peças para criar algoritimos, ou seja, pa
 - [x] Operadores (atribuição, concatenação, matemáticos, lógicos)
 - [x] Tipos de dados (string, number, boolean)
 - [x] Estrutura de dados (functions, object, array)
-- Controle de fluxo (if/else)
+- [x] Controle de fluxo (if/else)
 - [x] Estrutura de repetição (for, while)
 
 
@@ -36,6 +36,7 @@ Exemplo: ("Hello World!")
 
 - [x] Operadores de atribuição de valor: =
 - [x] Operdadores de contatenação (É o junção do valor de duas ou mais Strings): +
+- [x] Operadores de comparação: == != <= >= < >
 
 ## Dados
 
@@ -74,6 +75,7 @@ Exemplo: ("Hello World!")
 # Condicionais
 
 - [x] switch
+- [x] if/else
 
 ## Módulos em Node.js:
 
