@@ -37,6 +37,7 @@ Exemplo: ("Hello World!")
 - [x] Operadores de atribuição de valor: =
 - [x] Operdadores de contatenação (É o junção do valor de duas ou mais Strings): +
 - [x] Operadores de comparação: == != <= >= < >
+- [x] Spread operator: ...
 
 ## Dados
 
@@ -67,6 +68,7 @@ Exemplo: ("Hello World!")
 ### Arrays
 
 - [x] Uma lista que contem qualquer tipo de dado
+- [x] Métodos de array: push, |find, forEach, filter| : HOF (Higher Oredr Functions) 
 
 # Estrutura de repetição
 
