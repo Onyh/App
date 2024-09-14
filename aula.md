@@ -83,6 +83,13 @@ Exemplo: ("Hello World!")
 
 - [x] Importação de módulos {require, CommonJS}
 - [x] Biblioteca 'inquirer' para criar prompts interativos
+- [x] FS (File System)
+
+## JSON
+Javascript Object Notation
+
+- [x] JSON.parse(): Transforma de JSON para JS
+- [x] JSON.stringify(): Tranforma de JS para JSON
 
 ## Programação assíncrona e Promises:
 
