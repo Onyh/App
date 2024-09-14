@@ -68,7 +68,7 @@ Exemplo: ("Hello World!")
 ### Arrays
 
 - [x] Uma lista que contem qualquer tipo de dado
-- [x] Métodos de array: push, |find, forEach, filter| : HOF (Higher Oredr Functions) 
+- [x] Métodos de array: push, |find, forEach, filter, map| : HOF (Higher Oredr Functions) 
 
 # Estrutura de repetição
 
