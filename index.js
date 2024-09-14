@@ -61,7 +61,7 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "Metas finalizadas" = realizadas.length,
+        message: "Metas finalizadas: " + realizadas.length,
         choices: [...realizadas]
     })
 
@@ -85,12 +85,37 @@ const metasAbertas = async () => {
 // O professor não explicou direito :|
 
     await select({
-        message: "Notas Abertas " = abertas.length,
+        message: "Notas Abertas: " + abertas.length,
         choices: [...abertas]
     })
-// Colocar(Concatenar =) o "abertas.length" faz com que mostre a quantidade total de "Metas Abertas"
+// Colocar(Concatenar +) o "abertas.length" faz com que mostre a quantidade total de "Metas Abertas"
+    // Eu errei o símbolo de concatenação ;(
 // Isso também acontece nas funções anteriores
 // É que comecei fazer essas anotações agora :P 
+}
+
+const deletarMetas = async () => {
+    const metasDesmarcadas = metas.map((meta) => {
+        return { value: meta.value, checked: false }
+    })
+    const itensADeletar = await checkbox({
+        message: "Selecione item para deletar",
+        choices: [...metasDesmarcadas],
+        instructions: false,
+    })
+
+    if(itensADeletar.length == 0){
+        console.log("Nenhum item para deletar!")
+        return
+    }
+
+    itensADeletar.forEach((item) => {
+        metas = metas.filter((meta) => {
+            return meta.value != item
+        })
+    })
+
+    console.log("Meta(s) deletada(s) com sucesso!")
 
 }
 
@@ -118,12 +143,18 @@ const start = async () => {
                     value: "abertas"
                 },
                 {
+                    name: "Deletar metas",
+                    value: "deletar"
+                },
+                {
                     name: "Sair",
                     value: "sair"
                 }
             ]
         }) 
 
+// Esse é o "Menu"
+// Simples ou minimalista?         
         switch(opcao){
             case "cadastrar":
                 await cadastrarMeta()
@@ -138,10 +169,15 @@ const start = async () => {
             case"abertas":
                 await metasAbertas()
                 break
+            case"deletar":
+                await deletarMetas()
+                break
             case "sair":
                 console.log("Até a próxima!")
                 return
         }
+// É importante colocar os itens do menu (ou função) para depois aplicá-las
+
     }
 }
 
